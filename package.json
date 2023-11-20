@@ -1,18 +1,22 @@
 {
   "name": "template-ts-react",
   "private": true,
+  "homepage": "https://fictionalchrctr.github.io/picasso-test/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.18",
     "@reduxjs/toolkit": "^1.9.7",
+    "gh-pages": "^6.1.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
