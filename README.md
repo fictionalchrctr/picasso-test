@@ -1,6 +1,6 @@
 # React + TypeScript + Vite + MaterialUI + RTK Query + React Router DOM 6 + JSON Placeholder
 
-Тестовое задание для компании Семаргл
+Тестовое задание для компании ПИКАССО
 
 Приложение построено на архитектуре Feature Sliced Design
 
