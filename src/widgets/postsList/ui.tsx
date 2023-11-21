@@ -55,7 +55,14 @@ export const PostsList = () => {
   return (
     <div>
       <Grid container maxWidth="sm" spacing={2}>
-        {posts?.map((post: IPost) => <PostCard key={post.id} post={post} />)}
+        {posts?.map((post: IPost) => (
+          <PostCard
+            key={post.id}
+            id={post.id}
+            title={post.title}
+            body={post.body}
+          />
+        ))}
       </Grid>
       {isLoading && <LinearProgress />}
     </div>

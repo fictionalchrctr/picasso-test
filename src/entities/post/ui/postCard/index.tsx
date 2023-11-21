@@ -2,18 +2,17 @@ import { Card, CardContent, Grid, Typography } from '@mui/material'
 import { DetailsButton } from '..'
 import { IPostItemProps } from '../../../../shared/api'
 
-export const PostCard: React.FC<IPostItemProps> = ({ post }) => {
+export const PostCard: React.FC<IPostItemProps> = ({ id, title, body }) => {
   return (
     <Grid item xs={8}>
       <Card>
         <CardContent>
-          <Typography>№ {post.id}</Typography>
-          <Typography>Title: {post.title}</Typography>
+          <Typography>№ {id}</Typography>
+          <Typography>Title: {title}</Typography>
           <Typography>
-            Body:{' '}
-            {post.body.length > 20 ? post.body.slice(0, 20) + '...' : post.body}
+            Body: {body.length > 20 ? body.slice(0, 20) + '...' : body}
           </Typography>
-          <DetailsButton id={post.id} />
+          <DetailsButton id={id} />
         </CardContent>
       </Card>
     </Grid>

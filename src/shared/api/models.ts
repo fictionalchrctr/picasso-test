@@ -6,7 +6,9 @@ export interface IPost {
 }
 
 export interface IPostItemProps {
-  post: IPost
+  id: number
+  title: string
+  body: string
 }
 
 export interface DetailsButtonProps {
